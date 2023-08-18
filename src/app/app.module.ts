@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -55,6 +56,19 @@ import { CalAdmComponent } from './components/cal-adm/cal-adm.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule
+=======
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
   ],
   providers: [],
   bootstrap: [AppComponent]

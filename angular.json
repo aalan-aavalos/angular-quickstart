@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "front-end": {
       "projectType": "application",
       "schematics": {},
+=======
+    "angular-quickstart": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,19 +23,31 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/front-end",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
+=======
+            "outputPath": "dist/angular-quickstart",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.css",
+              "src/demo-styling.css"
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
             ],
             "scripts": []
           },
@@ -43,6 +65,15 @@
                   "maximumError": "4kb"
                 }
               ],
+<<<<<<< HEAD
+=======
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
               "outputHashing": "all"
             },
             "development": {
@@ -60,10 +91,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "front-end:build:production"
             },
             "development": {
               "browserTarget": "front-end:build:development"
+=======
+              "browserTarget": "angular-quickstart:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-quickstart:build:development"
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
             }
           },
           "defaultConfiguration": "development"
@@ -71,17 +109,28 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "front-end:build"
+=======
+            "browserTarget": "angular-quickstart:build"
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+<<<<<<< HEAD
             "polyfills": [
               "zone.js",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
+=======
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -95,7 +144,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "cli": {
     "analytics": "7171b72e-c3e6-439f-a864-4e557e1bfb6d"
   }
+=======
+  "defaultProject": "angular-quickstart"
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
 }

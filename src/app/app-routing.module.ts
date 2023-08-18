@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { HomeComponent } from './components/home/home.component';
 import { ActivComponent } from './components/activ/activ.component';
 import { NotifComponent } from './components/notif/notif.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
   {path: 'notif-adm', component:NotifAdmComponent},
   {path: 'cal-adm', component:CalAdmComponent}
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> 8c06e19a54abeb41eb4d15de592faba77239b29a
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
